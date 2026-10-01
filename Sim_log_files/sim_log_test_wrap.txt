@@ -1,0 +1,78 @@
+# Selected test = wrap
+# 
+# TEST: POINTER WRAP
+
+# 40000 WRITE ACCEPTED : data=08 expected_ptr=1
+# 60000 WRITE ACCEPTED : data=0f expected_ptr=2
+# 80000 WRITE ACCEPTED : data=0d expected_ptr=3
+# 100000 WRITE ACCEPTED : data=0a expected_ptr=4
+# 120000 WRITE ACCEPTED : data=0c expected_ptr=5
+# 140000 WRITE ACCEPTED : data=08 expected_ptr=6
+# 160000 WRITE ACCEPTED : data=0a expected_ptr=7
+# 180000 WRITE ACCEPTED : data=0d expected_ptr=8
+# 200000 WRITE ACCEPTED : data=0e expected_ptr=9
+# 220000 WRITE ACCEPTED : data=0b expected_ptr=10
+# 240000 WRITE ACCEPTED : data=08 expected_ptr=11
+# 260000 WRITE ACCEPTED : data=0c expected_ptr=12
+# 280000 WRITE ACCEPTED : data=0a expected_ptr=13
+# 300000 WRITE ACCEPTED : data=05 expected_ptr=14
+# 320000 WRITE ACCEPTED : data=09 expected_ptr=15
+# 340000 WRITE ACCEPTED : data=05 expected_ptr=0
+# 406000 READ PASS: expected=08 actual=08
+# 416000 READ PASS: expected=0f actual=0f
+# 426000 READ PASS: expected=0d actual=0d
+# 436000 READ PASS: expected=0a actual=0a
+# 446000 READ PASS: expected=0c actual=0c
+# 456000 READ PASS: expected=08 actual=08
+# 466000 READ PASS: expected=0a actual=0a
+# 476000 READ PASS: expected=0d actual=0d
+# 486000 READ PASS: expected=0e actual=0e
+# 496000 READ PASS: expected=0b actual=0b
+# 506000 READ PASS: expected=08 actual=08
+# 516000 READ PASS: expected=0c actual=0c
+# 526000 READ PASS: expected=0a actual=0a
+# 536000 READ PASS: expected=05 actual=05
+# 546000 READ PASS: expected=09 actual=09
+# 556000 READ PASS: expected=05 actual=05
+# 580000 WRITE ACCEPTED : data=09 expected_ptr=1
+# 600000 WRITE ACCEPTED : data=08 expected_ptr=2
+# 620000 WRITE ACCEPTED : data=08 expected_ptr=3
+# 640000 WRITE ACCEPTED : data=09 expected_ptr=4
+# 660000 WRITE ACCEPTED : data=0c expected_ptr=5
+# 680000 WRITE ACCEPTED : data=0f expected_ptr=6
+# 700000 WRITE ACCEPTED : data=0e expected_ptr=7
+# 720000 WRITE ACCEPTED : data=0f expected_ptr=8
+# 740000 WRITE ACCEPTED : data=06 expected_ptr=9
+# 760000 WRITE ACCEPTED : data=0b expected_ptr=10
+# 780000 WRITE ACCEPTED : data=08 expected_ptr=11
+# 800000 WRITE ACCEPTED : data=0f expected_ptr=12
+# 820000 WRITE ACCEPTED : data=0c expected_ptr=13
+# 840000 WRITE ACCEPTED : data=0a expected_ptr=14
+# 860000 WRITE ACCEPTED : data=05 expected_ptr=15
+# 880000 WRITE ACCEPTED : data=08 expected_ptr=0
+# 946000 READ PASS: expected=09 actual=09
+# 956000 READ PASS: expected=08 actual=08
+# 966000 READ PASS: expected=08 actual=08
+# 976000 READ PASS: expected=09 actual=09
+# 986000 READ PASS: expected=0c actual=0c
+# 996000 READ PASS: expected=0f actual=0f
+# 1006000 READ PASS: expected=0e actual=0e
+# 1016000 READ PASS: expected=0f actual=0f
+# 1026000 READ PASS: expected=06 actual=06
+# 1036000 READ PASS: expected=0b actual=0b
+# 1046000 READ PASS: expected=08 actual=08
+# 1056000 READ PASS: expected=0f actual=0f
+# 1066000 READ PASS: expected=0c actual=0c
+# 1076000 READ PASS: expected=0a actual=0a
+# 1086000 READ PASS: expected=05 actual=05
+# 1096000 READ PASS: expected=08 actual=08
+# 
+# ====================================
+# FINAL RESULT
+# ====================================
+# PASS COUNT = 32
+# FAIL COUNT = 0
+#              TEST PASSED
+# ====================================
+# ** Note: $finish    : asynchronous_fifo_tb.v(134)
+#    Time: 1200 ns  Iteration: 0  Instance: /tb

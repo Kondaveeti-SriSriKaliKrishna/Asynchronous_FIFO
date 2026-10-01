@@ -1,0 +1,23 @@
+# Selected test = reset
+# 
+# TEST: RESET
+
+# 40000 WRITE ACCEPTED : data=08 expected_ptr=1
+# 60000 WRITE ACCEPTED : data=0f expected_ptr=2
+# 80000 WRITE ACCEPTED : data=0d expected_ptr=3
+# 100000 WRITE ACCEPTED : data=0a expected_ptr=4
+# 120000 WRITE ACCEPTED : data=0c expected_ptr=5
+# 140000 WRITE ACCEPTED : data=08 expected_ptr=6
+# 160000 WRITE ACCEPTED : data=0a expected_ptr=7
+# 180000 WRITE ACCEPTED : data=0d expected_ptr=8
+# 235000 PASS: FIFO empty after reset
+# 
+# ====================================
+# FINAL RESULT
+# ====================================
+# PASS COUNT = 1
+# FAIL COUNT = 0
+#              TEST PASSED
+# ====================================
+# ** Note: $finish    : asynchronous_fifo_tb.v(136)
+#    Time: 335 ns  Iteration: 0  Instance: /tb

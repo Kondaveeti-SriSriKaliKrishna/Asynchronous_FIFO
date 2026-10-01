@@ -1,0 +1,78 @@
+# Selected test = write_fast
+# 
+# TEST: CONCURRENT - WRITE FASTER
+
+# 40000 WRITE ACCEPTED : data=0d expected_ptr=1
+# 50000 WRITE ACCEPTED : data=0b expected_ptr=2
+# 60000 WRITE ACCEPTED : data=05 expected_ptr=3
+# 70000 WRITE ACCEPTED : data=05 expected_ptr=4
+# 80000 WRITE ACCEPTED : data=0b expected_ptr=5
+# 90000 WRITE ACCEPTED : data=09 expected_ptr=6
+# 100000 WRITE ACCEPTED : data=07 expected_ptr=7
+# 110000 WRITE ACCEPTED : data=0a expected_ptr=8
+# 111000 READ PASS: expected=0d actual=0d
+# 120000 WRITE ACCEPTED : data=0e expected_ptr=9
+# 130000 WRITE ACCEPTED : data=0c expected_ptr=10
+# 131000 READ PASS: expected=0b actual=0b
+# 140000 WRITE ACCEPTED : data=06 expected_ptr=11
+# 150000 WRITE ACCEPTED : data=0b expected_ptr=12
+# 151000 READ PASS: expected=05 actual=05
+# 160000 WRITE ACCEPTED : data=06 expected_ptr=13
+# 170000 WRITE ACCEPTED : data=0b expected_ptr=14
+# 171000 READ PASS: expected=05 actual=05
+# 180000 WRITE ACCEPTED : data=07 expected_ptr=15
+# 190000 WRITE ACCEPTED : data=0f expected_ptr=0
+# 191000 READ PASS: expected=0b actual=0b
+# 200000 WRITE ACCEPTED : data=07 expected_ptr=1
+# 210000 WRITE ACCEPTED : data=08 expected_ptr=2
+# 211000 READ PASS: expected=09 actual=09
+# 220000 WRITE ACCEPTED : data=05 expected_ptr=3
+# 230000 WRITE ACCEPTED : data=0d expected_ptr=4
+# 231000 READ PASS: expected=07 actual=07
+# 240000 WRITE ACCEPTED : data=09 expected_ptr=5
+# 250000 WRITE ACCEPTED : data=0e expected_ptr=6
+# 251000 READ PASS: expected=0a actual=0a
+# 260000 WRITE ACCEPTED : data=0f expected_ptr=7
+# 270000 WRITE BLOCKED : FIFO FULL, data=05
+# 271000 READ PASS: expected=0e actual=0e
+# 280000 WRITE ACCEPTED : data=05 expected_ptr=8
+# 290000 WRITE BLOCKED : FIFO FULL, data=06
+# 291000 READ PASS: expected=0c actual=0c
+# 300000 WRITE ACCEPTED : data=0e expected_ptr=9
+# 310000 WRITE BLOCKED : FIFO FULL, data=0f
+# 311000 READ PASS: expected=06 actual=06
+# 320000 WRITE ACCEPTED : data=0c expected_ptr=10
+# 330000 WRITE BLOCKED : FIFO FULL, data=08
+# 331000 READ PASS: expected=0b actual=0b
+# 340000 WRITE ACCEPTED : data=0e expected_ptr=11
+# 350000 WRITE BLOCKED : FIFO FULL, data=0d
+# 351000 READ PASS: expected=06 actual=06
+# 371000 READ PASS: expected=0b actual=0b
+# 391000 READ PASS: expected=07 actual=07
+# 411000 READ PASS: expected=0f actual=0f
+# 431000 READ PASS: expected=07 actual=07
+# 451000 READ PASS: expected=08 actual=08
+# 471000 READ PASS: expected=05 actual=05
+# 491000 READ PASS: expected=0d actual=0d
+# 511000 READ PASS: expected=09 actual=09
+# 531000 READ PASS: expected=0e actual=0e
+# 551000 READ PASS: expected=0f actual=0f
+# 571000 READ PASS: expected=05 actual=05
+# 591000 READ PASS: expected=0e actual=0e
+# 611000 READ PASS: expected=0c actual=0c
+# 631000 READ PASS: expected=0e actual=0e
+# 651000 READ PASS: Underflow correctly detected
+# 671000 READ PASS: Underflow correctly detected
+# 691000 READ PASS: Underflow correctly detected
+# 711000 READ PASS: Underflow correctly detected
+# 731000 READ PASS: Underflow correctly detected
+# 
+# ====================================
+# FINAL RESULT
+# ====================================
+# PASS COUNT = 32
+# FAIL COUNT = 0
+#              TEST PASSED
+# ====================================
+# ** Note: $finish    : asynchronous_fifo_tb.v(134)
+#    Time: 840 ns  Iteration: 0  Instance: /tb

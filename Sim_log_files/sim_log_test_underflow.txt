@@ -1,0 +1,17 @@
+# Selected test = underflow
+# 
+# TEST: UNDERFLOW
+
+# 46000 READ PASS: Underflow correctly detected
+# 56000 READ PASS: Underflow correctly detected
+# 66000 READ PASS: Underflow correctly detected
+# 
+# ====================================
+# FINAL RESULT
+# ====================================
+# PASS COUNT = 3
+# FAIL COUNT = 0
+#              TEST PASSED
+# ====================================
+# ** Note: $finish    : asynchronous_fifo_tb.v(134)
+#    Time: 170 ns  Iteration: 0  Instance: /tb

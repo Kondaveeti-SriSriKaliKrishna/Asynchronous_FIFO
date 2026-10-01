@@ -1,0 +1,78 @@
+# Selected test = concurrent
+# 
+# TEST: CONCURRENT
+
+# 40000 WRITE ACCEPTED : data=0d expected_ptr=1
+# 60000 WRITE ACCEPTED : data=0b expected_ptr=2
+# 76000 READ FAIL: Expected rd_error=1
+# 80000 WRITE ACCEPTED : data=05 expected_ptr=3
+# 86000 READ PASS: expected=0d actual=0d
+# 96000 READ FAIL: Expected rd_error=1
+# 100000 WRITE ACCEPTED : data=05 expected_ptr=4
+# 106000 READ PASS: expected=0b actual=0b
+# 116000 READ FAIL: Expected rd_error=1
+# 120000 WRITE ACCEPTED : data=0b expected_ptr=5
+# 126000 READ PASS: expected=05 actual=05
+# 136000 READ FAIL: Expected rd_error=1
+# 140000 WRITE ACCEPTED : data=09 expected_ptr=6
+# 146000 READ PASS: expected=05 actual=05
+# 156000 READ FAIL: Expected rd_error=1
+# 160000 WRITE ACCEPTED : data=07 expected_ptr=7
+# 166000 READ PASS: expected=0b actual=0b
+# 176000 READ FAIL: Expected rd_error=1
+# 180000 WRITE ACCEPTED : data=0a expected_ptr=8
+# 186000 READ PASS: expected=09 actual=09
+# 196000 READ FAIL: Expected rd_error=1
+# 200000 WRITE ACCEPTED : data=0e expected_ptr=9
+# 206000 READ PASS: expected=07 actual=07
+# 216000 READ FAIL: Expected rd_error=1
+# 220000 WRITE ACCEPTED : data=0c expected_ptr=10
+# 226000 READ PASS: expected=0a actual=0a
+# 236000 READ FAIL: Expected rd_error=1
+# 240000 WRITE ACCEPTED : data=06 expected_ptr=11
+# 246000 READ PASS: expected=0e actual=0e
+# 256000 READ FAIL: Expected rd_error=1
+# 260000 WRITE ACCEPTED : data=0b expected_ptr=12
+# 266000 READ PASS: expected=0c actual=0c
+# 276000 READ FAIL: Expected rd_error=1
+# 280000 WRITE ACCEPTED : data=06 expected_ptr=13
+# 286000 READ PASS: expected=06 actual=06
+# 296000 READ FAIL: Expected rd_error=1
+# 300000 WRITE ACCEPTED : data=0b expected_ptr=14
+# 306000 READ PASS: expected=0b actual=0b
+# 316000 READ FAIL: Expected rd_error=1
+# 320000 WRITE ACCEPTED : data=07 expected_ptr=15
+# 326000 READ PASS: expected=06 actual=06
+# 336000 READ FAIL: Expected rd_error=1
+# 340000 WRITE ACCEPTED : data=0f expected_ptr=0
+# 346000 READ PASS: expected=0b actual=0b
+# 356000 READ FAIL: Expected rd_error=1
+# 360000 WRITE ACCEPTED : data=07 expected_ptr=1
+# 366000 READ PASS: expected=07 actual=07
+# 376000 READ FAIL: Expected rd_error=1
+# 380000 WRITE ACCEPTED : data=08 expected_ptr=2
+# 386000 READ PASS: expected=0f actual=0f
+# 400000 WRITE ACCEPTED : data=05 expected_ptr=3
+# 420000 WRITE ACCEPTED : data=0d expected_ptr=4
+# 440000 WRITE ACCEPTED : data=09 expected_ptr=5
+# 460000 WRITE ACCEPTED : data=0e expected_ptr=6
+# 480000 WRITE ACCEPTED : data=0f expected_ptr=7
+# 500000 WRITE ACCEPTED : data=05 expected_ptr=8
+# 520000 WRITE ACCEPTED : data=05 expected_ptr=9
+# 540000 WRITE ACCEPTED : data=06 expected_ptr=10
+# 560000 WRITE ACCEPTED : data=0e expected_ptr=11
+# 580000 WRITE ACCEPTED : data=0f expected_ptr=12
+# 600000 WRITE ACCEPTED : data=0c expected_ptr=13
+# 620000 WRITE ACCEPTED : data=08 expected_ptr=14
+# 640000 WRITE ACCEPTED : data=0e expected_ptr=15
+# 660000 WRITE ACCEPTED : data=0d expected_ptr=0
+# 
+# ====================================
+# FINAL RESULT
+# ====================================
+# PASS COUNT = 16
+# FAIL COUNT = 16
+#              TEST FAILED
+# ====================================
+# ** Note: $finish    : asynchronous_fifo_tb.v(134)
+#    Time: 780 ns  Iteration: 0  Instance: /tb

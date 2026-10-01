@@ -1,0 +1,29 @@
+# Selected test = basic
+# 
+# TEST: BASIC
+# 40000 WRITE ACCEPTED : data=08 expected_ptr=1
+# 60000 WRITE ACCEPTED : data=0f expected_ptr=2
+# 80000 WRITE ACCEPTED : data=0d expected_ptr=3
+# 100000 WRITE ACCEPTED : data=0a expected_ptr=4
+# 120000 WRITE ACCEPTED : data=0c expected_ptr=5
+# 140000 WRITE ACCEPTED : data=08 expected_ptr=6
+# 160000 WRITE ACCEPTED : data=0a expected_ptr=7
+# 180000 WRITE ACCEPTED : data=0d expected_ptr=8
+# 236000 READ PASS: expected=08 actual=08
+# 246000 READ PASS: expected=0f actual=0f
+# 256000 READ PASS: expected=0d actual=0d
+# 266000 READ PASS: expected=0a actual=0a
+# 276000 READ PASS: expected=0c actual=0c
+# 286000 READ PASS: expected=08 actual=08
+# 296000 READ PASS: expected=0a actual=0a
+# 306000 READ PASS: expected=0d actual=0d
+# 
+# ====================================
+# FINAL RESULT
+# ====================================
+# PASS COUNT = 8
+# FAIL COUNT = 0
+#              TEST PASSED
+# ====================================
+# ** Note: $finish    : asynchronous_fifo_tb.v(134)
+#    Time: 410 ns  Iteration: 0  Instance: /tb

@@ -1,0 +1,46 @@
+# Selected test = read_fast
+# 
+# TEST: CONCURRENT - READ FASTER
+
+# 40000 WRITE ACCEPTED : data=08 expected_ptr=1
+# 60000 WRITE ACCEPTED : data=0f expected_ptr=2
+# 80000 WRITE ACCEPTED : data=0d expected_ptr=3
+# 100000 WRITE ACCEPTED : data=0a expected_ptr=4
+# 120000 WRITE ACCEPTED : data=0c expected_ptr=5
+# 140000 WRITE ACCEPTED : data=08 expected_ptr=6
+# 160000 WRITE ACCEPTED : data=0a expected_ptr=7
+# 180000 WRITE ACCEPTED : data=0d expected_ptr=8
+# 236000 READ PASS: expected=08 actual=08
+# 240000 WRITE ACCEPTED : data=09 expected_ptr=9
+# 246000 READ PASS: expected=0f actual=0f
+# 256000 READ PASS: expected=0d actual=0d
+# 260000 WRITE ACCEPTED : data=0e expected_ptr=10
+# 266000 READ PASS: expected=0a actual=0a
+# 276000 READ PASS: expected=0c actual=0c
+# 280000 WRITE ACCEPTED : data=05 expected_ptr=11
+# 286000 READ PASS: expected=08 actual=08
+# 296000 READ PASS: expected=0a actual=0a
+# 300000 WRITE ACCEPTED : data=0f expected_ptr=12
+# 306000 READ PASS: expected=0d actual=0d
+# 316000 READ PASS: expected=09 actual=09
+# 320000 WRITE ACCEPTED : data=0c expected_ptr=13
+# 326000 READ PASS: expected=0e actual=0e
+# 336000 READ PASS: expected=05 actual=05
+# 340000 WRITE ACCEPTED : data=0d expected_ptr=14
+# 346000 READ PASS: expected=0f actual=0f
+# 360000 WRITE ACCEPTED : data=06 expected_ptr=15
+# 380000 WRITE ACCEPTED : data=09 expected_ptr=0
+# 400000 WRITE ACCEPTED : data=0f expected_ptr=1
+# 420000 WRITE ACCEPTED : data=0e expected_ptr=2
+# 440000 WRITE ACCEPTED : data=08 expected_ptr=3
+# 460000 WRITE ACCEPTED : data=07 expected_ptr=4
+# 
+# ====================================
+# FINAL RESULT
+# ====================================
+# PASS COUNT = 12
+# FAIL COUNT = 0
+#              TEST PASSED
+# ====================================
+# ** Note: $finish    : asynchronous_fifo_tb.v(136)
+#    Time: 580 ns  Iteration: 0  Instance: /tb
